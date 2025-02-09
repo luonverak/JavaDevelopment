@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">JavaDevelopment</string>
+    <string name="list_users">List users</string>
+    <string name="no">No</string>
+    <string name="name">Name</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="age">Age</string>
 </resources>
