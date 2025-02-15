@@ -1,5 +1,6 @@
 package com.java.development;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -37,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapterUser);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        binding.tbnAdd.setOnClickListener(v-> {
+            startActivity(new Intent(this, DetailActivity.class));
+            finish();
+        });
 
     }
 }
