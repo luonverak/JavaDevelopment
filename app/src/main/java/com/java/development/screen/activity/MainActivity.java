@@ -1,4 +1,6 @@
-package com.java.development;
+package com.java.development.screen.activity;
+
+import static com.java.development.data.model.UserModel.list;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,9 +9,9 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.java.development.adapter.AdapterUser;
 import com.java.development.databinding.ActivityMainBinding;
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private AdapterUser adapterUser;
     private  RecyclerView recyclerView;
 
-    List<UserModel> list=new ArrayList<>();
+//    List<UserModel> list=new ArrayList<>();
 
 
     @Override
@@ -28,9 +30,6 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
-
-        list.add(new UserModel(1,"Sok",1.80,60,23));
-        list.add(new UserModel(2,"Thyda",1.60,50,23));
 
         adapterUser = new AdapterUser(list,this);
 

@@ -1,10 +1,12 @@
-package com.java.development;
+package com.java.development.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.java.development.data.model.UserModel;
 import com.java.development.databinding.UserDataBinding;
 import java.util.List;
 

@@ -1,4 +1,7 @@
-package com.java.development;
+package com.java.development.data.model;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserModel {
     private int id;
@@ -34,4 +37,7 @@ public class UserModel {
     public int getAge() {
         return age;
     }
+
+   public static List<UserModel> list=new ArrayList<>();
+
 }
